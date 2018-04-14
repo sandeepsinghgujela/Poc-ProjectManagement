@@ -1,0 +1,66 @@
+ <div class="container">
+ <div class="row">
+   <div class="col-sm-10 col-sm-offset-1">
+      <div class="row">
+          <div class="col-md-6 col-sm-8 col-md-offset-3 col-sm-offset-2 ">
+             <form class="myForm" style="display:block;" autocomplete="off">
+                 <div class="form-group text-center"> <h2 class="title">Project Management</h2></div>
+                 <div class="form-group text-center">Please enter the required details</div>
+                 <div class="form-group ">
+                    <div class="input-group">
+                       <span class="input-group-addon"><img src="http://mypat.s3.amazonaws.com/website/mypat_v2/icon_usernm.png"/></span>
+                       <input id="email" type="text" class="form-control" required name="email" placeholder="Email or Mobile"  
+                       pattern='^(^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$)|(^[0-9]{10}$)$'   
+                       >
+                    </div>
+                    <!-- <div *ngIf="loginUserEmail.invalid && (loginUserEmail.dirty || loginUserEmail.touched)">
+                       <div *ngIf="loginUserEmail.errors.required">
+                          <small class="form-text text-muted error">
+                              Field cannot be blank.
+                          </small>
+                       </div> 
+                       <div *ngIf="loginUserEmail.errors.pattern ">
+                          <small class="form-text text-muted error">
+                           Enter your email address or mobile number
+                          </small>
+                       </div> 
+                    </div> -->
+                 </div>
+                 <div class="form-group">
+                    <div class="input-group">
+                       <span class="input-group-addon"><img src="http://mypat.s3.amazonaws.com/website/mypat_v2/icon_password.png"/></span>
+                       <input id="password" type="password" class="form-control" name="password" required placeholder="Password" pattern="^[^\s]*$" minlength="6">
+                    </div>
+                    <!-- <div *ngIf="loginUserPassword.invalid && (loginUserPassword.dirty || loginUserPassword.touched)">
+                       <div *ngIf="loginUserPassword.errors.required">
+                          <small class="form-text text-muted error">
+                              Field cannot be blank.
+                          </small>
+                       </div>
+                       <div *ngIf="loginUserPassword.errors.pattern">
+                          <small class="form-text text-muted error">
+                          Spaces not allowed.
+                          </small>
+                       </div>
+                       <div *ngIf="loginUserPassword.errors.minlength">
+                          <small class="form-text text-muted error">
+                          Your password must contain at least 6 characters.
+                          </small>
+                       </div>
+         
+         
+                    </div> -->
+                 </div>
+                 <div class="form-group text-center">
+                    <button class="btn btn-mypatlogin btn-width" type="submit"
+                     >Login</button>
+                 </div>
+                 <div class="form-group text-center">
+                    <div class="form_border"></div>
+                 </div>
+                 <div class="form-group text-center">
+                    <a class="btn btn-fiitjee btn-width" routerLink="/auth/login/fiitjee"  >Login With <span><img src="http://mypat.s3.amazonaws.com/website/mypat_v2/fiitjeelogo-btn.png"/></span></a>
+                 </div>
+              </form>
+         
+         

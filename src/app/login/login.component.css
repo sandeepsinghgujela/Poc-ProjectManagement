@@ -1,0 +1,293 @@
+body{
+        background: #49a4db url(http://mypat.s3.amazonaws.com/website/mypat_v2/fiitjeelogin_bg.png)  no-repeat center top;
+        background-size:cover;
+ }
+
+ .btn:focus{
+   outline: none;
+   box-shadow: none;
+ }
+.full-width-pop {
+   background: #53bfca !important;
+}
+ .myForm {
+         width: 100%;
+         padding:30px 50px;
+         border-radius:6px;
+         background:#eff6fc;
+         margin: 60px 0px;
+         font-size: 14px;
+         display: block;
+         }
+         .form_border{
+        width:100%;
+        text-align:center;
+        display:inline-block;
+        position:relative;
+        border-bottom:solid 1px #ccc;
+        }
+        .form_border:before{
+        position:absolute;
+        width:100%;
+        top:-10px;
+        left:47%;
+        content:"or";
+        font-size:14px;
+        height:25px;
+        width:25px;
+        border-radius:100%;
+        border:solid 1px #ccc;
+        text-align:center;
+        line-height:25px;
+        color:#444;
+        background:#ddd;
+        }
+        .btn-fiitjee{
+        background:#fdf473;
+        padding:0px 20px;
+        border-radius:3px;
+        color:#ed0000;
+        margin-top:15px;
+        border:solid 1px #ede77c;
+        font-size:15px;
+        }
+        .btn-fiitjee:focus, .btn-fiitjee:hover{
+        color:#ed0000;
+        background:#fdf473;
+        }
+        .btn-mypatlogin{
+        background:#51a8de;
+        padding:0px 20px;
+        border-radius:3px;
+        color:#fff;
+        margin-top:15px;
+        border:0;
+        outline: none;
+        box-shadow: none;
+        }
+        .btn-mypatlogin:focus, .btn-mypatlogin:hover{
+        color:#fff;
+        background:#51a8de;
+        outline: none;
+        box-shadow: none;
+        border: 0;
+
+        }
+        .btn-width{
+        width:100%;
+        height:38px;
+        line-height:36px;
+        padding:0px;
+        text-align:center;
+        }
+        .otpmenu{
+        display:block;
+        text-align:center;
+        margin:0px 0px 30px 0px;
+        padding:0px;
+        }
+        .otpmenu > li {
+        display:inline-block;
+        text-align:center;
+        margin:10px 7px 10px 7px;
+        list-style:none;
+        width:25px;
+        }
+        .otpmenu > li > input{
+        border:none;
+        border-bottom: solid 1px #444;
+        width:25px;
+        font-size:18px;
+        text-align:center;
+        display:inline-block;
+        }
+        .otpmenu > li > input:focus{
+        outline:none;
+        box-shadow:none;
+        }
+        .incompleteprofile{
+        font-size:16px;
+        font-weight:600;
+        color:#515151;
+        text-align:center;
+        padding:0px 0px 15px 0px;
+        display:block;
+        }
+        .error{
+        color:#ec0001;
+        }
+        .form-control{
+        height:40px;
+        box-shadow:none;
+        }
+         .input-group-addon{
+         background:#fafafa;
+         min-width:40px;
+         }
+        .skip {
+        position:absolute;
+        right:20px;
+        top:20px;
+        font-size:16px;
+        color:#5baed7;
+        }
+        .verifymobile{
+        display:block;
+        text-align:center;
+        margin:0px;
+        padding:0px;
+        }
+        .verifymobile > li{
+        display:inline-block;
+        text-align:center;
+        margin:0px 2px;
+        }
+        .verifymobile > li > a{
+        display:inline-block;
+        text-align:center;
+        height:13px;
+        width:13px;
+        background:#fff;
+        border:solid 1px #b8b8b8;
+        border-radius:100%;
+        }
+        .verifymobile > li.active a{
+        background:#b8b8b8;
+        border:solid 1px #b8b8b8;
+        }
+        .hover_tooltip{
+          text-align: right;
+          display: block;
+          width: 100%;
+          
+        }
+  .mobileno_incrapt {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }  
+  .resendotp{
+    color: #49a4db;
+    text-decoration: underline;
+    display: block;
+    padding-top: 15px;
+  }   
+/*tool tip css*/
+.infoicon {
+  color:#b7b7b7;
+}
+.close {
+   font-size: 24px;
+}
+.hoverred {
+   position: relative;
+   font-size:12px;
+   font-weight: 600;
+   text-decoration: underline;
+   cursor: pointer;
+}
+.hoverred .tooltiptext {
+   visibility: hidden;
+   width: 260px;
+   text-align: left !important;
+   background-color: #fff;
+   color: #444;
+   font-size: 14px;
+   text-align: center;
+   border-radius: 4px;
+   padding: 5px 10px;
+   position: absolute;
+   z-index: 9999;
+   top: 32px;
+   right: 0px;
+   margin-left: -80px;
+   opacity: 0;
+   transition: opacity 1s;
+   box-shadow: 0 0 5px #b7b7b7;
+}
+.hoverred .tooltiptext p {
+   margin-bottom: 10px;
+   font-weight: 400;
+}
+.hoverred .tooltiptext::after {
+   content: "\f04b";
+   position: absolute;
+   top: -19px;
+   right: 10px;
+   margin-left: -18px;
+   font-family: FontAwesome;
+  -ms-transform: rotate(-90deg); /* IE 9 */
+   -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+   transform: rotate(-90deg);
+   font-size: 18px;
+   text-shadow: 2px 0 5px #b7b7b7;
+   color: #fff;
+
+}
+.hoverred:hover .tooltiptext {
+   visibility: visible;
+   opacity: 1;
+}
+.hoverred {
+   display: inline-block;
+}
+.hoverred .tooltiptext.faild-status {
+   width: 140px!important;
+   margin-left: -58px;
+}
+.hoverred .tooltiptext.faild-status::after {
+   margin-left: -3px;
+}
+/*end*/
+
+
+
+        @media (max-width: 500px) {
+        .myForm {
+        min-width: 90%;
+        padding: 20px 15px !important;
+        }
+        .btn-width{
+          min-width: auto;
+          width: 100%;
+        }
+}
+
+
+
+.partitioned {
+  padding-left: 15px;
+  letter-spacing: 40px;
+  border: 0;
+  background-image: linear-gradient(to left, black 70%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 50px 1px;
+  background-repeat: repeat-x;
+  background-position-x: 35px;
+  background-image: -webkit-linear-gradient(to left, black 70%, rgba(255, 255, 255, 0) 0%);
+  background-image: -moz-linear-gradient(to left, black 70%, rgba(255, 255, 255, 0) 0%);
+  background-image: -o-linear-gradient(to left, black 70%, rgba(255, 255, 255, 0) 0%);
+  width: 220px;
+  min-width:220px;
+  border:none;
+  box-shadow:none;
+   outline:none;
+    font-size:16px;
+  }
+
+  .divInner{
+   left: 0;
+   position: sticky;
+  }
+
+ .divOuter{
+   width:190px;
+   overflow:hidden;
+     margin: 0px auto;
+ }
+
+
+
+.title{
+  color:#51a8de;
+}
