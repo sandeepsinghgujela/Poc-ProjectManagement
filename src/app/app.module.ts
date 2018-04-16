@@ -8,7 +8,9 @@ import {LoginService} from './login.service';
 import { FormsModule} from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProjectComponent } from './project/project.component';
-import { HeaderComponent } from './header/header.component'
+import { HeaderComponent } from './header/header.component';
+import { BaseService} from './base.service';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,9 +22,10 @@ import { HeaderComponent } from './header/header.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [LoginService],
+  providers: [LoginService,BaseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
