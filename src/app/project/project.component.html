@@ -54,51 +54,46 @@
   <h1 class="display-4">Current Projects</h1>
   
 <div id="accordion">
-  <div class="card">
+  <div class="card" *ngFor="let project of allProjects; let i=index">
     <div class="card-header" id="headingOne">
       <h5 class="mb-0">
         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Project 1
+          Project {{i+1}}
         </button>
       </h5>
     </div>
 
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
       <div class="card-body">
-        DEtail 1
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Project 2
-        </button>
-      </h5>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-      <div class="card-body">
-        detail 2
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          project 3
-        </button>
-      </h5>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-      <div class="card-body">
-        detail 3
-      </div>
-    </div>
-  </div>
-</div>
+        <div class="table-row">
+          <span class="left"><b>Name </b>: </span>
+          <span class="right">{{project.proj_name}}</span>
+        </div>
+        <div class="table-row">
+          <span class="left"><b>Department </b>: </span>
+          <span class="right">{{project.department}}</span>
+        </div>
+        <div class="table-row">
+          <span class="left"><b>Description </b>: </span>
+          <span class="right">{{project.description}}</span>
+        </div>
+        <div class="table-row">
+          <span class="left"><b>Team </b>: </span>
+          <span class="right">{{project.team}}</span>
+        </div>
+        <div class="table-row">
+          <span class="left"><b>Owner Id </b>: </span>
+          <span class="right">{{project.owner_id}}</span>
+        </div>
+        <div class="table-row">
+          <span class="left"><b>Manager </b>: </span>
+          <span class="right">{{project.manager}}</span>
+        </div>
 
+      </div>
+    </div>
+  </div>
+  
  
 </div>
 

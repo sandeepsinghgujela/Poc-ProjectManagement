@@ -15,14 +15,23 @@ export class ProjectComponent implements OnInit {
   	// manager:''
 
   }
+  allProjects=[];
   constructor(private baseService:BaseService) { }
-  ngOnInit(){}
+  ngOnInit(){
+    this.getAllProject();
+  }
 
 	addProject(){
 		console.log("this.project",this.project);
 	
   		this.baseService.addProject(this.project).subscribe((res)=>console.log('response',res));
 	}
+
+  getAllProject(){
+    this.baseService.getAllProject().subscribe((res)=>{
+      this.allProjects=res;
+    })
+  }
 
 
   
