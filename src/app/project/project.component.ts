@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import {BaseService } from '../base.service';
 
@@ -9,19 +10,18 @@ import {BaseService } from '../base.service';
 })
 export class ProjectComponent implements OnInit {
 
+  project={
+  	// name:'',
+  	// manager:''
 
+  }
   constructor(private baseService:BaseService) { }
   ngOnInit(){}
 
-	addUser(){
-		var user ={
-	   "name": "Ankidt",
-	    "email":"sdfrse@sd.ff",
-	    "mobile": "2242532",
-	    "designation": "sSE",
-	    "role": "SEs"
-		};
-  		this.baseService.addUser(user).subscribe((res)=>console.log('response',res));
+	addProject(){
+		console.log("this.project",this.project);
+	
+  		this.baseService.addProject(this.project).subscribe((res)=>console.log('response',res));
 	}
 
 
