@@ -11,13 +11,15 @@ import { ProjectComponent } from './project/project.component';
 import { HeaderComponent } from './header/header.component';
 import { BaseService} from './base.service';
 import { HttpClientModule } from '@angular/common/http';
+import { UserComponent } from './user/user.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashboardComponent,
     ProjectComponent,
-    HeaderComponent
+    HeaderComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,

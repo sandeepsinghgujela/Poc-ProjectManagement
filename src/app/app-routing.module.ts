@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import {LoginComponent} from './login/login.component'
 import {DashboardComponent} from './dashboard/dashboard.component'
 import {ProjectComponent} from './project/project.component'
+import {UserComponent} from './user/user.component'
 
 
 
@@ -16,6 +17,7 @@ const routes:Routes=[
 {path:'login',component:LoginComponent},
 {path:'dashboard',component:DashboardComponent},
 {path:'project',component:ProjectComponent}
+{path:'user',component:UserComponent}
 
 ]
 

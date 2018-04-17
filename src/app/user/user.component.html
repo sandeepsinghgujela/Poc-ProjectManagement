@@ -1,0 +1,100 @@
+<app-header></app-header>
+
+<div>
+  
+<div class="jumbotron" style="width: 48%;float:left;margin-left: 1%">
+  <h1 class="display-4">Add A user</h1>
+  
+  <hr class="my-4">
+
+
+  <form #userForm="ngForm" (submit)="addUser()" >
+    <div class="form-group">
+      <label for="exampleInputEmail1"> user Name</label>
+      <input type="text" [(ngModel)]="user.name" class="form-control" name="userName"id="exampleInputEmail1" 
+      #userName="ngModel" aria-describedby="emailHelp" placeholder="Enter Name">  
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Email</label>
+      <input type="text" name="managerName" [(ngModel)]="user.email" #email="ngModel" class="form-control" id="managerName" placeholder="Email">
+    </div>
+    <div class="form-group">
+      <label for="department">Mobile</label>
+      <input type="number" name="department" [(ngModel)]="user.mobile" #mobile="ngModel" class="form-control" id="department" placeholder="Mobile">
+    </div>
+    <div class="form-group">
+      <label for="department">Designation</label>
+      <input type="text" name="Designation" [(ngModel)]="user.designation" #Designation="ngModel" class="form-control" id="Designation" placeholder="Designation">
+    </div>
+    <div class="form-group">
+      <label for="description">Role</label>
+      <input type="text" name="Role" [(ngModel)]="user.role" #role="ngModel" class="form-control" id="description" placeholder="Description">        
+    </div>
+    
+     
+    
+    
+
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+
+
+
+</div>
+
+
+<div class="jumbotron" style="width: 48%;float:left;margin-left: 1%">
+  <h1 class="display-4">Current users</h1>
+  
+<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          user 1
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        DEtail 1
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          user 2
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        detail 2
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          user 3
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        detail 3
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+</div>
+
+</div>

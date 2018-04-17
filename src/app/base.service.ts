@@ -46,8 +46,11 @@ export class BaseService {
   // }
 
   /** POST: add a new hero to the server */
-  addProject(hero): Observable<any> {
-    return this.http.post<any>(this.baseUrl+'/projects', hero, httpOptions)
+  addProject(project): Observable<any> {
+    return this.http.post<any>(this.baseUrl+'/projects', project, httpOptions)
+  };
+  addUser(user): Observable<any> {
+    return this.http.post<any>(this.baseUrl+'/users', user, httpOptions)
   }
  
 }
