@@ -15,12 +15,13 @@ export class UserComponent implements OnInit {
 		this.baseService.addUser(this.user).subscribe((response)=>{
 			console.log('user created ');
 		})
+		this.getAllUsers();
 	}
   constructor(private baseService:BaseService) { }
 
   getAllUsers(){
   	this.baseService.getAllUsers().subscribe((res)=>{
-  		
+
   		console.log("got all user",res);
   		this.allUsers=res;
   	}
