@@ -52,6 +52,13 @@ export class BaseService {
   addUser(user): Observable<any> {
     return this.http.post<any>(this.baseUrl+'/users', user, httpOptions)
   }
+  addTask(task): Observable<any> {
+    return this.http.post<any>(this.baseUrl+'/tasks', task, httpOptions)
+  }
+  login(user):Observable<any>{
+    console.log("inside service get login");
+    return this.http.get<any>(this.baseUrl+'/login/'+user.email+'/'+user.password)
+  }
  
 }
 

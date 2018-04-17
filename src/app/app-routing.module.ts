@@ -5,6 +5,8 @@ import {LoginComponent} from './login/login.component'
 import {DashboardComponent} from './dashboard/dashboard.component'
 import {ProjectComponent} from './project/project.component'
 import {UserComponent} from './user/user.component'
+import {TaskComponent} from './task/task.component'
+
 
 
 
@@ -16,8 +18,9 @@ import {UserComponent} from './user/user.component'
 const routes:Routes=[
 {path:'login',component:LoginComponent},
 {path:'dashboard',component:DashboardComponent},
-{path:'project',component:ProjectComponent}
-{path:'user',component:UserComponent}
+{path:'project',component:ProjectComponent},
+{path:'user',component:UserComponent},
+{path:'task',component:TaskComponent}
 
 ]
 

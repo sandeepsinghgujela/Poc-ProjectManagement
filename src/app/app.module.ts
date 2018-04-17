@@ -12,6 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { BaseService} from './base.service';
 import { HttpClientModule } from '@angular/common/http';
 import { UserComponent } from './user/user.component';
+import { TaskComponent } from './task/task.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { UserComponent } from './user/user.component';
     DashboardComponent,
     ProjectComponent,
     HeaderComponent,
-    UserComponent
+    UserComponent,
+    TaskComponent
   ],
   imports: [
     BrowserModule,

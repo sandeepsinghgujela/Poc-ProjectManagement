@@ -3,42 +3,32 @@
 <div>
   
 <div class="jumbotron" style="width: 48%;float:left;margin-left: 1%">
-  <h1 class="display-4">Add A user</h1>
+  <h1 class="display-4">Add A task</h1>
   
   <hr class="my-4">
 
 
-  <form #userForm="ngForm" (submit)="addUser()" >
+  <form #taskForm="ngForm" (submit)="addTask()" >
     <div class="form-group">
-      <label for="exampleInputEmail1"> Name</label>
-      <input type="text" [(ngModel)]="user.name" class="form-control" name="name"id="exampleInputEmail1" 
-      #name="ngModel" aria-describedby="emailHelp" placeholder="Enter Name">  
+      <label for="exampleInputEmail1"> Task Name</label>
+      <input type="text" [(ngModel)]="task.task_name" class="form-control" name="taskName"id="exampleInputEmail1" 
+      #taskName="ngModel" aria-describedby="emailHelp" placeholder="Enter Task Name">  
     </div>
     <div class="form-group">
-      <label for="exampleInputEmail1"> Username</label>
-      <input type="text" [(ngModel)]="user.username" class="form-control" name="userName"id="username" 
-      #userName="ngModel" aria-describedby="emailHelp" placeholder="Enter Name">  
+      <label for="exampleInputPassword1">Duration</label>
+      <input type="text" name="managerName" [(ngModel)]="task.duration" #duration="ngModel" class="form-control" id="managerName" placeholder="Duration">
     </div>
     <div class="form-group">
-      <label for="exampleInputEmail1"> Password</label>
-      <input type="text" [(ngModel)]="user.password" class="form-control" name="userName"id="password" 
-      #password="ngModel" aria-describedby="emailHelp" placeholder="Password">  
+      <label for="department">Description</label>
+      <input type="text" name="department" [(ngModel)]="task.description" #description="ngModel" class="form-control" id="department" placeholder="Description">
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">Email</label>
-      <input type="text" name="managerName" [(ngModel)]="user.email" #email="ngModel" class="form-control" id="managerName" placeholder="Email">
+      <label for="department">Project Id</label>
+      <input type="number" name="Designation" [(ngModel)]="task.project_id" #projectId="ngModel" class="form-control" id="Designation" placeholder="Project Id">
     </div>
     <div class="form-group">
-      <label for="department">Mobile</label>
-      <input type="number" name="department" [(ngModel)]="user.mobile" #mobile="ngModel" class="form-control" id="department" placeholder="Mobile">
-    </div>
-    <div class="form-group">
-      <label for="department">Designation</label>
-      <input type="text" name="Designation" [(ngModel)]="user.designation" #Designation="ngModel" class="form-control" id="Designation" placeholder="Designation">
-    </div>
-    <div class="form-group">
-      <label for="description">Role</label>
-      <input type="text" name="Role" [(ngModel)]="user.role" #role="ngModel" class="form-control" id="description" placeholder="Description">        
+      <label for="description">Reporter</label>
+      <input type="number" name="Role" [(ngModel)]="task.reporter" #reporter="ngModel" class="form-control" id="description" placeholder="reporter">        
     </div>
     
      
@@ -56,14 +46,14 @@
 
 
 <div class="jumbotron" style="width: 48%;float:left;margin-left: 1%">
-  <h1 class="display-4">Current users</h1>
+  <h1 class="display-4">Current tasks</h1>
   
 <div id="accordion">
   <div class="card">
     <div class="card-header" id="headingOne">
       <h5 class="mb-0">
         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          user 1
+          task 1
         </button>
       </h5>
     </div>
@@ -78,7 +68,7 @@
     <div class="card-header" id="headingTwo">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          user 2
+          task 2
         </button>
       </h5>
     </div>
@@ -92,7 +82,7 @@
     <div class="card-header" id="headingThree">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          user 3
+          task 3
         </button>
       </h5>
     </div>
