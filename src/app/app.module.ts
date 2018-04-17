@@ -13,6 +13,17 @@ import { BaseService} from './base.service';
 import { HttpClientModule } from '@angular/common/http';
 import { UserComponent } from './user/user.component';
 import { TaskComponent } from './task/task.component';
+import { FusionChartsModule } from 'angular2-fusioncharts';
+
+// Import FusionCharts library and chart modules
+import * as FusionCharts from 'fusioncharts';
+import * as Charts from 'fusioncharts/fusioncharts.charts';
+import * as FintTheme from 'fusioncharts/themes/fusioncharts.theme.fint';
+
+// Pass the fusioncharts library and chart modules
+FusionChartsModule.fcRoot(FusionCharts, Charts, FintTheme);
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +38,8 @@ import { TaskComponent } from './task/task.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FusionChartsModule
   ],
   providers: [LoginService,BaseService],
   bootstrap: [AppComponent]

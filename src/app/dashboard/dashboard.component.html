@@ -1,1 +1,24 @@
 <app-header></app-header>
+<br/><br/>
+<div style="float:left">
+	<fusioncharts
+    width="600"
+    height="350"
+    type="Column2D"
+    dataFormat="JSON"
+    [dataSource]="dataSource"
+></fusioncharts>
+</div>
+<div>
+
+<br/><br/>
+
+<fusioncharts
+    width="600"
+    height="350"
+    type="pie3d"
+    dataFormat="JSON"
+    theme= "ocean"
+    [dataSource]="dataSource1"
+></fusioncharts>
+</div>
