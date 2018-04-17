@@ -65,5 +65,8 @@ export class BaseService {
   getAllProject():Observable<any>{
     return this.http.get<any>(this.baseUrl+'/projects')
   }
+  getAllTasks():Observable<any>{
+    return this.http.get<any>(this.baseUrl+'/tasks')
+  }
 }
 

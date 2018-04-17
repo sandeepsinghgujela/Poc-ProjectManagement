@@ -49,18 +49,44 @@
   <h1 class="display-4">Current tasks</h1>
   
 <div id="accordion">
-  <div class="card">
+  <div class="card" *ngFor="let task of allTasks; let i=index;">
     <div class="card-header" id="headingOne">
       <h5 class="mb-0">
         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          task 1
+          Task {{i+1}}
         </button>
       </h5>
     </div>
 
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
       <div class="card-body">
-        DEtail 1
+       
+        <div class="table-row">
+          <span class="left"><b>Task Name </b>: </span>
+          <span class="right">{{task.task_name}}</span>
+        </div>
+
+        <div class="table-row">
+          <span class="left"><b>Duration </b>: </span>
+          <span class="right">{{task.duration}}</span>
+        </div>
+
+
+        <div class="table-row">
+          <span class="left"><b>Description </b>: </span>
+          <span class="right">{{task.description}}</span>
+        </div>
+
+        <div class="table-row">
+          <span class="left"><b>Project Id </b>: </span>
+          <span class="right">{{task.project_id}}</span>
+        </div>
+
+        <div class="table-row">
+          <span class="left"><b>Reporter </b>: </span>
+          <span class="right">{{task.reporter}}</span>
+        </div>
+
       </div>
     </div>
   </div>
