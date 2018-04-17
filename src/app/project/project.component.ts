@@ -24,8 +24,12 @@ export class ProjectComponent implements OnInit {
 	addProject(){
 		console.log("this.project",this.project);
 	
-  		this.baseService.addProject(this.project).subscribe((res)=>console.log('response',res));
-	}
+  		this.baseService.addProject(this.project).subscribe((res)=>{
+      console.log('response',res);
+      this.getAllProject();
+      })
+	    
+  }
 
   getAllProject(){
     this.baseService.getAllProject().subscribe((res)=>{

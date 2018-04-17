@@ -14,8 +14,8 @@ export class UserComponent implements OnInit {
 
 		this.baseService.addUser(this.user).subscribe((response)=>{
 			console.log('user created ');
-		})
-		this.getAllUsers();
+		  this.getAllUsers();
+    })
 	}
   constructor(private baseService:BaseService) { }
 
