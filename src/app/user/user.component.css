@@ -1,0 +1,14 @@
+.table-row{
+	/*width: 100%;*/
+
+}
+
+.table-row .left{
+	width: 50px;
+		/*width: 30%;*/
+	}
+
+.table-row .right{
+		/*width: 70%;*/
+	}
+

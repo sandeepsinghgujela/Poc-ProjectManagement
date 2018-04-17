@@ -59,6 +59,9 @@ export class BaseService {
     console.log("inside service get login");
     return this.http.get<any>(this.baseUrl+'/login/'+user.email+'/'+user.password)
   }
+  getAllUsers():Observable<any>{
+    return this.http.get<any>(this.baseUrl+'/users')
+  }
  
 }
 

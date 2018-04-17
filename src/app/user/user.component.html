@@ -59,51 +59,48 @@
   <h1 class="display-4">Current users</h1>
   
 <div id="accordion">
-  <div class="card">
+
+  <div class="card" *ngFor="let user of allUsers; let i=index;">
     <div class="card-header" id="headingOne">
       <h5 class="mb-0">
         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          user 1
+          User {{i+1}}
         </button>
       </h5>
     </div>
 
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
       <div class="card-body">
-        DEtail 1
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          user 2
-        </button>
-      </h5>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-      <div class="card-body">
-        detail 2
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          user 3
-        </button>
-      </h5>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-      <div class="card-body">
-        detail 3
-      </div>
-    </div>
-  </div>
-</div>
+       
+        <div class="table-row">
+          <span class="left"><b>Name </b>: </span>
+          <span class="right">{{user.email}}</span>
+        </div>
 
+         <div class="table-row">
+          <span class="left"><b>Email</b></span>
+          <span class="right">{{user.email}}</span>
+        </div>
+
+         <div class="table-row">
+          <span class="left"><b>Mobile</b></span>
+          <span class="right">{{user.mobile}}</span>
+        </div>
+        
+         <div class="table-row">
+          <span class="left"><b>Designation</b></span>
+          <span class="right">{{user.designation}}</span>
+        </div>
+
+         <div class="table-row">
+          <span class="left"><b>Role</b></span>
+          <span class="right">{{user.role}}</span>
+        </div>
+      </div>
+
+
+  </div>
+  
  
 </div>
 

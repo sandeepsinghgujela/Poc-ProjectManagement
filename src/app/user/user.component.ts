@@ -9,6 +9,7 @@ export class UserComponent implements OnInit {
 	user={
 
 	};
+	allUsers=[];
 	addUser(){
 
 		this.baseService.addUser(this.user).subscribe((response)=>{
@@ -17,7 +18,17 @@ export class UserComponent implements OnInit {
 	}
   constructor(private baseService:BaseService) { }
 
+  getAllUsers(){
+  	this.baseService.getAllUsers().subscribe((res)=>{
+  		
+  		console.log("got all user",res);
+  		this.allUsers=res;
+  	}
+  		);
+  	
+  }
   ngOnInit() {
+	this.getAllUsers();
   }
 
 }
