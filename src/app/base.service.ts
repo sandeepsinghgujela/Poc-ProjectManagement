@@ -14,7 +14,7 @@ export class BaseService {
 
   constructor(private http:HttpClient) { }
 
-  private baseUrl = 'http://localhost:5002';  // URL to web api
+  private baseUrl = 'http://13.127.177.37:5002';  // URL to web api
 
 
  
